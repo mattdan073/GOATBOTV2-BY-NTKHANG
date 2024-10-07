@@ -15,6 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "hi theo") return message.reply("hello boss,musta buhay buhay?");
+	if (event.body && event.body.toLowerCase() == "hi theo") return message.reply("hello po");
 }
 };
