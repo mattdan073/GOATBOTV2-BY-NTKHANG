@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-			name: "pogi",
+			name: "theo",
 			version: "1.0",
 			author: "Jaychris Garcia",
 			countDown: 5,
@@ -15,6 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "pogi") return message.reply("pogi mo talaga par. btw, bakit mukha kang paa?");
+	if (event.body && event.body.toLowerCase() == "theo") return message.reply("Hello boss, how can i help?");
 }
 };
