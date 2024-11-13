@@ -17,7 +17,7 @@ module.exports = {
     const fs = require("fs");
 
     try {
-      const response = await axios.get('https://jhunapi.mrbaylon4.repl.co/snauzk/?apikey=Marjhunapi');
+      const response = await axios.get('https://ace-rest-api.onrender.com/api/animevid?');
       const ext = response.data.url.substring(response.data.url.lastIndexOf(".") + 1);
 
       const callback = function () {
@@ -29,7 +29,7 @@ module.exports = {
 
       request(response.data.url).pipe(fs.createWriteStream(__dirname + `/cache/codm.${ext}`)).on("close", callback);
     } catch (err) {
-      api.sendMessage("[ ANIME ]\nApi error status: 200\nContact the owner to fix immediately", event.threadID);
+      api.sendMessage("[ ANIME ]\nApi error status: ,err", event.threadID);
       api.setMessageReaction("❌", event.messageID, (err) => {}, true);
     }
   }
